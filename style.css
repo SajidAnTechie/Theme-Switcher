@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --black: #333;
+  --green: #017143;
+  --white: #fff;
+  --white2: #fff;
+  --black2: #333;
+}
+.dark {
+  --black: #fff;
+  --white: #113828;
+  --black2: #124e36;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+}
+
+main {
+  width: 300px;
+}
+
+.media-icons {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media-icons li {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background-color: var(--black2);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--white2);
+  font-size: 1.2rem;
+}
+.media-icons a {
+  color: var(--white2);
+}
+
+.media-icons li:hover {
+  background-color: var(--green);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin: auto;
+  padding: 10px 0px;
+}
+.theme-switcher {
+  position: relative;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-color: var(--black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme-switcher::before {
+  content: "\f185";
+  font-family: "Font Awesome 5 Free";
+  color: var(--white);
+  font-size: 20px;
+}
+.theme-switcher.active::before {
+  content: "\f186";
+  font-family: "Font Awesome 5 Free";
+}
