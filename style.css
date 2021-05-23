@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
 }
-:root {
+.light {
   --black: #333;
   --green: #017143;
   --white: #fff;
@@ -14,6 +14,7 @@
   --black: #fff;
   --white: #113828;
   --black2: #124e36;
+  --white2: #fff;
 }
 
 body {
