@@ -13,6 +13,7 @@
 .dark {
   --black: #fff;
   --white: #113828;
+  --green: #017143;
   --black2: #124e36;
   --white2: #fff;
 }
@@ -86,4 +87,24 @@ header {
 .theme-switcher.active::before {
   content: "\f186";
   font-family: "Font Awesome 5 Free";
+}
+.profile {
+  width: 100%;
+  text-align: center;
+}
+.profile img {
+  max-width: 150px;
+  border-radius: 50%;
+}
+.profile p {
+  margin: 10px 0px;
+  line-height: 1.5rem;
+  color: var(--black);
+}
+.profile h2 {
+  color: var(--black);
+}
+
+.dark .profile .name {
+  color: var(--green);
 }
